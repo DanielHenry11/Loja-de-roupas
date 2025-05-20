@@ -15,12 +15,25 @@ header {
     padding: 3%;
 }
 
+header div {
+    align-items: center;
+    justify-content: center;
+}
+
+header input {
+    height: 40px;
+    width: 460px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     color: #B22222;
+    gap: 30px;
 }
 
 a {
