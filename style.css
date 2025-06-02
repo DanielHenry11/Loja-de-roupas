@@ -165,7 +165,8 @@ p {
     text-align: center;
     border-radius: 5%;
     width: 100%;
-  max-width: 300px;
+    max-width: 300px;
+    background-image: url('img/fundo-vermelho-card.jpg');
 }
 
 
@@ -174,9 +175,10 @@ p {
   height: 40px;
   padding: 10px 0;
   font-weight: bold;
+  color: white;
 }
 
-.text-frete {
+.div-cards p.text-frete {
     color: #4dda4d;
 }
 
