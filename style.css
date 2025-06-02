@@ -35,19 +35,29 @@ header {
 }
 
 .header-input {
-    margin-top: 1.5%;
     align-items: center;
     justify-content: center;
-    
+    width: 25%;
+    position: relative;
 }
 
-header input {
+.header-input input {
     height: 40px;
-    width: 100%;
+    width: 85%;
     border-radius: 20px;
     padding: 10px;
+    color: black;
 }
-
+.header-input button {
+    width: 40px;
+    height: 35px;
+    background-color: white;
+    border-radius: 40px;
+    position: absolute;
+    right: 60px;
+    border: none;
+    top: 3px;
+}
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -105,20 +115,22 @@ p {
 }
 
 .carrossel-container {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .carrossel-slide {
-  display: flex;
-  width: 400vw;
-  animation: slide 24s infinite ease-in-out;
+    display: flex;
+    width: calc(100vw * 4);
+    animation: slide 24s infinite ease-in-out;
 }
 
 .carrossel-slide img {
-  width: 100vw; /* largura da tela */
-  height: 97vh; /* altura da tela */
+    flex-shrink: 0;
+  width: 100vw;
+  height: auto;
+  max-height: 97vh;
   object-fit: cover;
 }
 
@@ -160,13 +172,15 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background-color: #EFE6DD;
+    
     margin: 1%;
     text-align: center;
     border-radius: 5%;
     width: 100%;
     max-width: 300px;
-    background-image: url('img/fundo-vermelho-card.jpg');
+    background-image: linear-gradient(to right, rgb(108, 16, 16), rgb(255, 0, 0));
+
+
 }
 
 
@@ -220,10 +234,11 @@ footer p {
     }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 675px) {
     .cards-imgs {
-    height: 100px;
+    height: 300px;
     }
+    
 }
 
 @media (max-width: 490px) {
