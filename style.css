@@ -53,6 +53,14 @@ header {
     outline: none;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
 .header-input button {
     width: 40px;
     height: 35px;
@@ -71,6 +79,10 @@ header {
     background-color: #000000;
     border-radius:20px;
     border: none;
+}
+
+.header-buttons span {
+    font-size: 30px;
 }
 
 nav {
