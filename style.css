@@ -47,17 +47,32 @@ header {
     border-radius: 20px;
     padding: 10px;
     color: black;
+    font-size: 18px;
+    font-family: inherit;
+    border: none;
+    outline: none;
 }
+
 .header-input button {
     width: 40px;
     height: 35px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 40px;
     position: absolute;
     right: 60px;
     border: none;
     top: 3px;
 }
+
+.header-buttons button {
+    width: 50px;
+    height: 20px;
+    color: white;
+    background-color: #000000;
+    border-radius:20px;
+    border: none;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +145,7 @@ p {
     flex-shrink: 0;
   width: 100vw;
   height: auto;
-  max-height: 97vh;
+  max-height: 93vh;
   object-fit: cover;
 }
 
@@ -172,10 +187,9 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    
     margin: 1%;
     text-align: center;
-    border-radius: 5%;
+    border-radius: 3%;
     width: 100%;
     max-width: 300px;
     background-image: linear-gradient(to right, rgb(108, 16, 16), rgb(255, 0, 0));
