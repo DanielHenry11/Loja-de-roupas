@@ -220,10 +220,17 @@ p {
     width: 100%;
     max-width: 300px;
     background-image: linear-gradient(to right, rgb(108, 16, 16), rgb(255, 0, 0));
-
-
 }
 
+.text-novo {
+    background-color: #ac0808;
+    max-width: 55px;
+    font-size: small;
+    max-height: 21px;
+    margin-top: 15px;
+    margin-right: 200px;
+    line-height: 3px;
+}
 
 .div-cards p {
   width: 100%;
