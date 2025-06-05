@@ -34,23 +34,33 @@ header {
     padding: 1%;
 }
 
-.header-input {
-    align-items: center;
-    justify-content: center;
-    width: 25%;
-    position: relative;
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  padding-right: 20px;
 }
 
-.header-input input {
-    height: 40px;
-    width: 85%;
-    border-radius: 20px;
-    padding: 10px;
-    color: black;
-    font-size: 18px;
-    font-family: inherit;
-    border: none;
-    outline: none;
+.input-container input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background-color: #F4F4F4;
+}
+
+
+.input-container .icon-search {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
 }
 
 .material-symbols-outlined {
@@ -83,6 +93,7 @@ header {
 
 .header-buttons span {
     font-size: 30px;
+    cursor: pointer;
 }
 
 nav {
@@ -178,6 +189,10 @@ p {
 }
 
 .title-produtos {
+    padding: 20px;
+    border-radius: 15px;
+    margin: 40px auto;
+    width: 90%;
     color: #ffffff;
     text-align: center;
     font-size: 1.5em;
@@ -225,7 +240,7 @@ p {
 .cards-imgs {
     height: 240px;
     margin: 5%;
-    transition: trasform 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
 }
 
@@ -269,6 +284,6 @@ footer p {
 
 @media (max-width: 490px) {
     .cards-imgs {
-    height: 70px;
+    height: 150px;
     }
 }
