@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(135deg, #ffffff, #e0dbdb);
+}
+
+.conteiner {
+    border: solid 1px;
+    background: linear-gradient(135deg, #c20202, #0e0000);
+    backdrop-filter: blur(300px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    width: 480px;
+    padding: 30px 40px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 20px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px 50px 10px 15px;
+    color: white;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    font-size: 12px;
+}
+
+.remember-forgot input[type="checkbox"] {
+    margin-right: 5px;
+    transform: translateY(2px);
+}
+
+.remember-forgot a {
+    text-decoration: none;
+    color: white;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.register-link {
+    text-align: center;
+    margin: 20px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.box-consultar-pedido {
+    border: 1px solid #e4e4e4;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px rgba(79, 79, 80, 0.15);
+    padding: 10px 20px;
+}
+
+.box-consultar-pedido h2 {
+    display: flex;
+    justify-content: center;
+    font-size: .875em;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.box-consultar-pedido p {
+    display: flex;
+    justify-content: center;
+    font-size: 11px;
+}
+
+.box-consultar-pedido button {
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #00A441;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+
+    .conteiner {
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: none;
+    }
+
+    form {
+        width: 100%;
+    }
+}
